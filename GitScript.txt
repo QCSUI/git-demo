@@ -54,9 +54,35 @@ git reflog  # 用于看HEAD的移动轨迹从哪一个ID到哪一个ID
 
 
 ##对某一文件-回到以前 checkout
-git checkout {ID} -- 1.py
+git checkout {ID} -- 1.py  # 把其中一个文件给还原成以前的版本
 
 从原来的一个commit开始
+
+##Branch 从主分支master分出来
+##master是最稳定版本
+##big feature 
+
+          __________little feature 
+-------|__________________matser(mian)
+                    |______big feature 
+
+git log --oneline --graph  #ID前面会出现*
+git branch dev  # 建立一个dev的branch
+git branch  # 看是在哪建立的branch
+git checkout dev  # checkout方法把文件指针指到dev这个branch上
+git checkout master 
+git branch -d dev  # delete
+git checkout -b dev  # 把branch和checkout合起来，建议一个dev分支而且把HEAD指到这里
+
+
+git commit -am 
+
+
+git merge --no-ff -m"keep merge info" dev   # no fast forward
+git log --oneline --graph
+
+
+
 
 
 
