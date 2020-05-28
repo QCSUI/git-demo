@@ -40,3 +40,14 @@ git commit --amend --no-edit #把刚修改的版本代替commit里最新的一�
 git add 1.py  # Stage状态
 git reset 1.py  #返回unstaged状态
 
+git log --oneline  #
+git reset --hard HEAD  #把HEAD返回到最近的一次commit状态
+
+git log --oneline  #
+git reset --hard HEAD^#把HEAD以及文件内容，返回到倒数第二次commit的状态，
+
+git log --oneline  #
+git reset --hard {ID}
+
+git reflog  # 用于看HEAD的移动轨迹
+
