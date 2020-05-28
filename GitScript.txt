@@ -76,7 +76,7 @@ git checkout -b dev  # 把branch和checkout合起来，建议一个dev分支而�
 
 git commit -am 
 
-git merge --no-ff -m"keep merge info" dev   # no fast forward
+git merge --no-ff -m "keep merge info" dev   # no fast forward
 git log --oneline --graph
 #当有两人同时修改master和dev，无法正常merge
 
