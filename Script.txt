@@ -1,0 +1,42 @@
+cd D:\GitTutorial
+
+git config --global user.name "QCSUI"
+
+git config --global user.email "sqc6160@gmail.com"
+
+ls -a   #show all the files
+
+git init  # initialize the Git Repository
+
+touch 1.py   # create a new (Untracked)file 
+
+git status  # 
+
+git add 1.py
+
+## Untracked >>"add">> Staged >>"commit">>Unmodified/Modified(Unstaged) 
+# So now, 1.py are Staged
+
+git log
+git diff  # to see the difference between the files unadded(unstaged) yet and the commited
+git add . 
+#git status # if use the git status now, we can find that the color turn green. because the change has been added
+git commit -m "Change 1"  # m for message
+## 要先把要commit的东西add一下，再commit
+
+
+git diff #来看对比，三种状态之间 unstaged，staged，commited
+git diff  # 看还没add的和commit的
+git diff --cached  # 看add的和commit的
+git diff HEAD  # 看add和没add的，not verified  
+
+git log --oneline
+
+
+## 回到从前
+git add .
+git commit --amend --no-edit #把刚修改的版本代替commit里最新的一版
+
+git add 1.py  # Stage状态
+git reset 1.py  #返回unstaged状态
+
