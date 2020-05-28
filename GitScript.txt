@@ -33,7 +33,7 @@ git diff HEAD  # 看add和没add的，not verified
 git log --oneline
 
 
-## 回到从前
+## 回到从前的commit， reset
 git add .
 git commit --amend --no-edit #把刚修改的版本代替commit里最新的一版
 
@@ -49,5 +49,17 @@ git reset --hard HEAD^#把HEAD以及文件内容，返回到倒数第二次commi
 git log --oneline  #
 git reset --hard {ID}
 
-git reflog  # 用于看HEAD的移动轨迹
+git reflog  # 用于看HEAD的移动轨迹从哪一个ID到哪一个ID
+
+
+
+##对某一文件-回到以前 checkout
+git checkout {ID} -- 1.py
+
+从原来的一个commit开始
+
+
+
+
+
 
