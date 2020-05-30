@@ -101,13 +101,36 @@ git branch boss
 git add . 
 git commit -"JOB from boss"
 git checkout dev
+git stash pop  # 把刚才临时存储起来的版本重新蹦出来
+
+##Github
+git push -u origin master
+SSH
 
 
+## git mergetool
+Ctrl+W 切换窗口
+上面分别是两个要merge的和中间有个base的version
+下面是我们要改的最终的
+快捷键好像是ShiftZZ
+关闭上面的三个窗口好像是q
 
 
+## 从Github clone
+#git clone <repo>
 
 
+git clone git@github.com:QCSUI/ardupilot.git
+cd ardupilot/
+ls
+git fetch
+git branch dev
+git checkout dev
 
 
+## vim文本编辑器
+Esc
+:  #命令
+x  # quit
 
 
